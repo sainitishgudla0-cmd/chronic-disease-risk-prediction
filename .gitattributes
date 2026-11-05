@@ -1,0 +1,4 @@
+# Model files are checksummed, so git must never alter their bytes.
+*.joblib binary
+# Keep text files consistent across operating systems.
+* text=auto

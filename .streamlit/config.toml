@@ -1,0 +1,20 @@
+# Separate light and dark sections let the app follow the viewer's system setting.
+[theme.light]
+primaryColor = "#0f766e"
+baseRadius = "medium"
+
+[theme.dark]
+primaryColor = "#14b8a6"
+baseRadius = "medium"
+
+[browser]
+# No usage statistics are sent from this app.
+gatherUsageStats = false
+
+[client]
+# Hide tracebacks from the browser so an error can never echo health inputs back.
+showErrorDetails = "none"
+toolbarMode = "minimal"
+
+[logger]
+level = "warning"

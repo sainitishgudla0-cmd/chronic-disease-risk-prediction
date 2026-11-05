@@ -1,0 +1,4 @@
+# Test and lint tools only; not needed to run or deploy the app.
+-r requirements.txt
+pytest==9.2.0
+ruff==0.17.3

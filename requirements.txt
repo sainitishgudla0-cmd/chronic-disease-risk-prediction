@@ -1,0 +1,9 @@
+# Runtime and training dependencies. Python 3.12 is the tested version.
+# scikit-learn, joblib, numpy and pandas are pinned exactly because the committed
+# model files can only be relied on with the versions that produced them.
+streamlit==1.66.1
+scikit-learn==1.9.1
+joblib==1.6.0
+numpy==2.5.4
+pandas==3.1.1
+altair==6.3.0

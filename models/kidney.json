@@ -1,0 +1,341 @@
+{
+ "disease": "kidney",
+ "seed": 42,
+ "sklearn_version": "1.9.1",
+ "selected_model": "Gradient boosting (shallow)",
+ "counts": {
+  "total": 400,
+  "unique_feature_rows": 400,
+  "development": 320,
+  "fit": 320,
+  "test": 80,
+  "development_positive_rate": 0.625
+ },
+ "candidate_comparison": [
+  {
+   "model": "Logistic regression (stronger regularization)",
+   "log_loss": 0.12566,
+   "log_loss_se": 0.00455,
+   "brier": 0.02656,
+   "roc_auc": 0.99925,
+   "selected": false
+  },
+  {
+   "model": "Logistic regression (weaker regularization)",
+   "log_loss": 0.05304,
+   "log_loss_se": 0.00516,
+   "brier": 0.01159,
+   "roc_auc": 0.99921,
+   "selected": false
+  },
+  {
+   "model": "Gradient boosting (shallow)",
+   "log_loss": 0.04344,
+   "log_loss_se": 0.00871,
+   "brier": 0.01184,
+   "roc_auc": 0.99879,
+   "selected": true
+  },
+  {
+   "model": "Gradient boosting (deeper)",
+   "log_loss": 0.04987,
+   "log_loss_se": 0.01884,
+   "brier": 0.01154,
+   "roc_auc": 0.99898,
+   "selected": false
+  }
+ ],
+ "cv": {
+  "folds": 5,
+  "repeats": 5
+ },
+ "calibration": {
+  "eligible": false,
+  "minimum_per_class": 200,
+  "calibration_split_positive": null,
+  "calibration_split_negative": null,
+  "adopted": false,
+  "method": null
+ },
+ "test": {
+  "n": 80,
+  "n_positive": 50,
+  "observed_rate": 0.625,
+  "mean_predicted": 0.64117,
+  "calibration_slope": 25.99481,
+  "brier_of_constant_rate": 0.23438,
+  "metrics": {
+   "roc_auc": 1.0,
+   "pr_auc": 1.0,
+   "brier": 0.01336,
+   "log_loss": 0.04802
+  },
+  "ci95": {
+   "roc_auc": [
+    1.0,
+    1.0
+   ],
+   "pr_auc": [
+    1.0,
+    1.0
+   ],
+   "brier": [
+    0.00204,
+    0.02913
+   ],
+   "log_loss": [
+    0.0193,
+    0.08848
+   ]
+  },
+  "bootstrap_replicates": 1000
+ },
+ "baseline_test": {
+  "brier": 0.23438,
+  "constant_prediction": 0.625
+ },
+ "calibration_table": [
+  {
+   "n": 16,
+   "mean_predicted": 0.00699,
+   "observed": 0.0,
+   "observed_low": 0.0,
+   "observed_high": 0.19361
+  },
+  {
+   "n": 16,
+   "mean_predicted": 0.22682,
+   "observed": 0.125,
+   "observed_low": 0.03498,
+   "observed_high": 0.36023
+  },
+  {
+   "n": 16,
+   "mean_predicted": 0.97272,
+   "observed": 1.0,
+   "observed_low": 0.80639,
+   "observed_high": 1.0
+  },
+  {
+   "n": 16,
+   "mean_predicted": 0.9995,
+   "observed": 1.0,
+   "observed_low": 0.80639,
+   "observed_high": 1.0
+  },
+  {
+   "n": 16,
+   "mean_predicted": 0.99982,
+   "observed": 1.0,
+   "observed_low": 0.80639,
+   "observed_high": 1.0
+  }
+ ],
+ "roc": [
+  {
+   "fpr": 0.0,
+   "tpr": 0.0
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.02
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.06
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.14
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.42
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.46
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.5
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.54
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.9
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 0.94
+  },
+  {
+   "fpr": 0.0,
+   "tpr": 1.0
+  },
+  {
+   "fpr": 0.23333,
+   "tpr": 1.0
+  },
+  {
+   "fpr": 0.3,
+   "tpr": 1.0
+  },
+  {
+   "fpr": 0.53333,
+   "tpr": 1.0
+  },
+  {
+   "fpr": 0.6,
+   "tpr": 1.0
+  },
+  {
+   "fpr": 0.83333,
+   "tpr": 1.0
+  },
+  {
+   "fpr": 0.93333,
+   "tpr": 1.0
+  },
+  {
+   "fpr": 1.0,
+   "tpr": 1.0
+  }
+ ],
+ "cutoffs": [
+  {
+   "cutoff": 0.1,
+   "share_flagged": 0.6625,
+   "sensitivity": 1.0,
+   "specificity": 0.9,
+   "ppv": 0.9434
+  },
+  {
+   "cutoff": 0.25,
+   "share_flagged": 0.6625,
+   "sensitivity": 1.0,
+   "specificity": 0.9,
+   "ppv": 0.9434
+  },
+  {
+   "cutoff": 0.5,
+   "share_flagged": 0.65,
+   "sensitivity": 1.0,
+   "specificity": 0.93333,
+   "ppv": 0.96154
+  },
+  {
+   "cutoff": 0.75,
+   "share_flagged": 0.6125,
+   "sensitivity": 0.98,
+   "specificity": 1.0,
+   "ppv": 1.0
+  },
+  {
+   "cutoff": 0.9,
+   "share_flagged": 0.6,
+   "sensitivity": 0.96,
+   "specificity": 1.0,
+   "ppv": 1.0
+  }
+ ],
+ "subgroups": [
+  {
+   "group": "Age under 60",
+   "n": 47,
+   "n_positive": 23,
+   "observed_rate": 0.48936,
+   "mean_predicted": 0.51939,
+   "roc_auc": 1.0,
+   "brier": 0.0224
+  },
+  {
+   "group": "Age 60+",
+   "n": 30,
+   "n_positive": 24,
+   "observed_rate": 0.8,
+   "mean_predicted": 0.79779,
+   "roc_auc": null,
+   "brier": null
+  }
+ ],
+ "reference_values": {
+  "age": 55.0,
+  "bp": 80.0,
+  "htn": "no",
+  "dm": "no",
+  "cad": "no",
+  "appet": "good",
+  "pe": "no",
+  "ane": "no",
+  "hemo": 12.7,
+  "pcv": 41.0,
+  "bgr": 121.0,
+  "sg": 1.02,
+  "su": 0
+ },
+ "typical_ranges": {
+  "age": [
+   5.39,
+   79.87
+  ],
+  "bp": [
+   60.0,
+   110.0
+  ],
+  "hemo": [
+   5.952,
+   17.572
+  ],
+  "pcv": [
+   18.2,
+   53.4
+  ],
+  "bgr": [
+   70.0,
+   448.76
+  ]
+ },
+ "missing_rate_development": {
+  "age": 0.01875,
+  "bp": 0.02813,
+  "htn": 0.00625,
+  "dm": 0.00625,
+  "cad": 0.00625,
+  "appet": 0.00313,
+  "pe": 0.00313,
+  "ane": 0.00313,
+  "hemo": 0.13437,
+  "pcv": 0.18438,
+  "bgr": 0.09375,
+  "sg": 0.11563,
+  "su": 0.12187
+ },
+ "diagnostics": {
+  "missingness_only_cv_auc": 0.85437,
+  "all_24_features_test_auc": 1.0,
+  "complete_case_test": {
+   "n_positive": 29,
+   "n_negative": 21,
+   "auc": 1.0
+  },
+  "selected_feature_missing_rate": {
+   "age": 0.01875,
+   "bp": 0.02813,
+   "htn": 0.00625,
+   "dm": 0.00625,
+   "cad": 0.00625,
+   "appet": 0.00313,
+   "pe": 0.00313,
+   "ane": 0.00313,
+   "hemo": 0.13437,
+   "pcv": 0.18438,
+   "bgr": 0.09375,
+   "sg": 0.11563,
+   "su": 0.12187
+  }
+ }
+}

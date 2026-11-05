@@ -1,0 +1,8 @@
+{
+ "sklearn_version": "1.9.1",
+ "sha256": {
+  "diabetes.joblib": "e6f385d41148abae2ab75d5c7085f5c271e91dff5dfeb21a3d2bf48ab3ed9b23",
+  "heart.joblib": "44b14993ed9d31599e589af26c76523a423c154bf5d1dbef2a519a48a7ba1df7",
+  "kidney.joblib": "0c800788623923c98369bd3c0a74e1f6972e8812d47e5516d1caf14367d7068f"
+ }
+}

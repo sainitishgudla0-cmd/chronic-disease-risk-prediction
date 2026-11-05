@@ -1,0 +1,32 @@
+# Environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Datasets are downloaded on demand and must never be committed
+data/
+*.csv
+*.data
+*.arff
+*.xpt
+*.XPT
+*.rar
+
+# Secrets and local settings
+.env
+.env.*
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Editor and OS files
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+.DS_Store
